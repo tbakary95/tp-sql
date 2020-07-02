@@ -36,5 +36,29 @@ Exercice 6
 # having Pays like '%S%'
 #     or pays like '%R%';
 
-Exercice 8
-select
+
+# Exercice 9
+# select NomAuteur,Titre,Prix
+# from titre,auteur,titreauteur
+# where auteur.IdAuteur = titreauteur.IdAuteur
+# and titreauteur.IdTitre = titre.IdTitre;
+
+
+
+-- Exercice 10
+select NomEditeur, Titre, Qt, NomMag
+from editeur,titre,vente,magasin
+where editeur.IdEditeur = titre.IdEditeur
+and titre.IdTitre = vente.IdTitre
+and vente.idmag = magasin.IdMag
+order by NomMag;
+
+-- Exercice 11
+
+# select NomAuteur,sum(Qt),
+#        from auteur,titreauteur,titre,vente
+# where auteur.IdAuteur = titreauteur.IdAuteur
+# and titreauteur.IdTitre = titre.IdTitre
+# and titre.IdTitre = vente.IdTitre
+# group by NomAuteur
+# having sum(Qt) >=20;
