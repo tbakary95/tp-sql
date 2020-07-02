@@ -1,0 +1,51 @@
+Exercice 1
+1. SELECT * FROM un ;
+
+ ==> (affichage du tableau un)
+
+
+
+
+2. SELECT a FROM un ;
+==> (affichage de la colonne A)
+
+3. SELECT a FROM un WHERE c=1 ;
+( affichage 1 de la colonne c)
+
+4. SELECT a FROM un WHERE c=1 OR c=2 ;
+(affichage de 1 ou 2 de la colonne c au tableau 1)
+
+5. SELECT DISTINCT a FROM un WHERE c=1 OR c=2 ;
+(affichage de 1 et 2 de la colonne en extration du tableau un)
+
+6. SELECT a FROM un ORDER BY b ;
+(la colonne est classe de maniere ascendant)
+
+7. SELECT a, e FROM un, deux ;
+(selection de la colonne a et e )
+
+8. SELECT a, e FROM un, deux WHERE c=e ;
+(affichage de la colonne e)
+
+
+exercice 2
+rows:1
+
+exercice 3
+rows:8
+rows:1
+rows:43
+
+exercice 4
+rows:7
+
+exercice 5
+rows:14
+
+Exercice 6
+rows:12
+
+Exercice 7
+rows:3
+Exercice 8
+rows:

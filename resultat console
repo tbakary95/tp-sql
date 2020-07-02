@@ -1,0 +1,40 @@
+# --select  NomEditeur,Ville,Region from editeur
+
+# select NomEmploye, PnEmploye, DateEmbauche
+#  from employe
+#  where NomEmploye like 'L%' and DateEmbauche between '1990-01-01'
+#  and '1990-12-31'
+#  and PositionEmploye  between 10 and 100;
+
+#Exercice 3
+# # select NomEmploye,DateEmbauche
+# from employe
+# order by IdEditeur , NomEmploye asc
+#Exercice4
+# select NomAuteur,Pays,Adresse
+# from auteur
+# where Pays in ('BE','CH','FR')
+
+Exercice 5
+# select PositionEmploye, as 'position employe',
+#        count(PositionEmploye), as
+#        Max(DateEmbauche), as
+#        MIN(DateEmbauche), as
+# from  employe
+# group by PositionEmploye
+# having PositionEmploye;
+Exercice 6
+# select idtitre, max(Droit) Droit
+# from  droitprevu
+# group by idtitre
+# having sum(droit);
+
+# Exercice 7
+# select Pays,count(IdEditeur)'nombre Editeur'
+# from editeur
+# group by Pays
+# having Pays like '%S%'
+#     or pays like '%R%';
+
+Exercice 8
+select
